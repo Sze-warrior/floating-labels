@@ -1,0 +1,96 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.bg {
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#3ca0e2, #277fb9);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#3ca0e2, #277fb9);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#3ca0e2, #277fb9);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#3ca0e2, #277fb9);
+  /* Standard syntax */
+  background-repeat: no-repeat;
+}
+
+p {
+  color: #4CD964;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.container {
+  max-width: 700px;
+  min-width: 320px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+@media screen and (max-width: 699px) {
+  .container {
+    margin-top: 50px;
+  }
+}
+
+.row {
+  width: 100%;
+  float: left;
+}
+
+.form-container {
+  padding: 10px;
+  position: relative;
+}
+.form-container label {
+  display: block;
+  color: #4CD964;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.form-container label.email {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: -2;
+  opacity: 0;
+}
+.form-container label.float-up {
+  top: -15px;
+}
+.form-container input {
+  width: 98%;
+  height: 30px;
+  border: 1px solid #4CD964;
+}
+.form-container input.email-form:focus ~ label.email {
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-container {
+  max-width: 100%;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 699px) {
+  .card-container {
+    width: 85%;
+  }
+}

@@ -1,0 +1,44 @@
+@import "variables";
+
+html{
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.bg{    
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3ca0e2, #277fb9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3ca0e2, #277fb9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3ca0e2, #277fb9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3ca0e2, #277fb9); /* Standard syntax */
+    background-repeat: no-repeat;
+
+}
+
+p{
+    color: $green;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.container {
+	max-width: $max-width;
+	min-width: $min-width;
+	margin: 0 auto;
+    margin-top: 100px;
+
+    @media screen and (max-width:$mobile){
+        margin-top: 50px;
+    }
+}
+
+.row{
+	width: $one-hundred-percentage;
+    float: left;
+}

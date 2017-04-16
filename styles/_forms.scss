@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+
+
+.form-container{
+    padding: 10px;
+    position: relative;
+
+    label{
+        display: block;
+        color: $green;
+        @include transition(0.5s);
+            
+        &.email{
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            z-index: -2;
+            opacity:0;
+        }
+
+        &.float-up{
+            top: -15px;
+        }
+
+    }
+
+    input{
+        width: 98%;
+        height: 30px;
+        border: 1px solid $green;
+
+        &.email-form{
+
+            &:focus~label.email{
+                top: 0;
+                z-index: 1;
+                opacity:1;
+                @include transition(0.5s);
+            }
+        }
+    }
+}
