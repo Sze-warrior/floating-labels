@@ -4,7 +4,8 @@
     display: block;
     margin: 0 auto;
 
-    @media screen and (max-width:$mobile){
-    	width: 85%;
+    &.card-login{
+    	max-width: 70%;
+    	padding: 0 40px 40px;
     }
 }
