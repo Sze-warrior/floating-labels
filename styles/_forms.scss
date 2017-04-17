@@ -3,7 +3,7 @@
 
 
 .form-container{
-    padding: 10px;
+    padding: 40px 0 0;
     position: relative;
 
     label{
@@ -13,27 +13,31 @@
             
         &.email{
             position: absolute;
-            top: 20px;
-            left: 15px;
+            top: 0px;
+            left: 50px;
             z-index: -2;
             opacity:0;
+            @include transition(0.5s);
         }
-
-        &.float-up{
-            top: -15px;
-        }
-
     }
 
     input{
-        width: 98%;
+        width: 80%;
         height: 30px;
         border: 1px solid $green;
+        display: block;
+        margin: 0 auto;
+        outline: none;      
+
+        &:focus{
+            @include transition(0.5s);
+            border: 1px solid darken($green, 20%);            
+        }
 
         &.email-form{
 
             &:focus~label.email{
-                top: 0;
+                top: 15px;
                 z-index: 1;
                 opacity:1;
                 @include transition(0.5s);

@@ -47,7 +47,7 @@ p {
 }
 
 .form-container {
-  padding: 10px;
+  padding: 40px 0 0;
   position: relative;
 }
 .form-container label {
@@ -60,21 +60,32 @@ p {
 }
 .form-container label.email {
   position: absolute;
-  top: 20px;
-  left: 15px;
+  top: 0px;
+  left: 50px;
   z-index: -2;
   opacity: 0;
-}
-.form-container label.float-up {
-  top: -15px;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .form-container input {
-  width: 98%;
+  width: 80%;
   height: 30px;
   border: 1px solid #4CD964;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+}
+.form-container input:focus {
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #219e37;
 }
 .form-container input.email-form:focus ~ label.email {
-  top: 0;
+  top: 15px;
   z-index: 1;
   opacity: 1;
   -moz-transition: 0.5s;
@@ -89,8 +100,7 @@ p {
   display: block;
   margin: 0 auto;
 }
-@media screen and (max-width: 699px) {
-  .card-container {
-    width: 85%;
-  }
+.card-container.card-login {
+  max-width: 70%;
+  padding: 0 40px 40px;
 }
