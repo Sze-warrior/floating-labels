@@ -7,19 +7,18 @@ $header-height: 70px;
 
 
 //Color Variables
-
-$red: #cf150a;
-$green: #4CD964;
+$green: #42cbad;
+$blue: #2d466d;
 $white: #fff;
 $black: #000;
 
 
 //Media queries variables
+$mobile: 767px;
 
-$mobile: 699px;
 
-
-//Font sizes
-
+//Font sizes and weights
 $menu-font-size: 18px;
 $header-name-desktop: 25px;
+$font-weight-200: 200;
+$font-size-default: 16px;

@@ -1,0 +1,19 @@
+@import "mixins";
+
+.card-container{
+	max-width: 100%;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    @include border-radius(8px);
+    max-width: 50%;
+    padding: 40px;
+}
+
+@media screen and (max-width:$mobile){
+
+	.card-container{
+		max-width: 80%;
+    	padding: 40px 20px;
+	}
+}

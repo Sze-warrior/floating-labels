@@ -3,45 +3,47 @@
 
 
 .form-container{
-    padding: 40px 0 0;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: block;
     position: relative;
 
     label{
         display: block;
-        color: $green;
+        color: darken($green, 15%);
+        font-size: 14px;
         @include transition(0.5s);
-            
-        &.email{
-            position: absolute;
+
+        &.email, &.password{
             top: 0px;
-            left: 50px;
-            z-index: -2;
-            opacity:0;
+            opacity: 0;
+            z-index: -1;
+            position: absolute;
             @include transition(0.5s);
         }
     }
 
     input{
-        width: 80%;
+        width: 95%;
         height: 30px;
         border: 1px solid $green;
         display: block;
         margin: 0 auto;
         outline: none;      
+        padding: 8px;
+        font-size: 16px;        
+        @include border-radius(4px);
 
         &:focus{
             @include transition(0.5s);
-            border: 1px solid darken($green, 20%);            
+            border: 1px solid darken($green, 15%);            
         }
 
-        &.email-form{
-
-            &:focus~label.email{
-                top: 15px;
-                z-index: 1;
-                opacity:1;
-                @include transition(0.5s);
-            }
+        &:focus~label{
+            top: -5px;
+            z-index: 1;
+            opacity: 1;
+            @include transition(0.5s);
         }
     }
 }
