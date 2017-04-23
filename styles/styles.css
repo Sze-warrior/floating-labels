@@ -147,4 +147,5 @@ p {
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }

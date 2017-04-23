@@ -15,5 +15,6 @@
     	background-color: darken($blue, 15%);
     	outline: none;
     	@include transition(0.5s);
+    	cursor: pointer;
     }
 }
