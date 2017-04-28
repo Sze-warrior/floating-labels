@@ -10,6 +10,7 @@
     margin-top: 20px;
     color: white;
     background-color: $blue;
+    @include transition(0.5s);
 
     &:hover, &:focus{
     	background-color: darken($blue, 15%);
