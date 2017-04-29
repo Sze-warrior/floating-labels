@@ -62,20 +62,20 @@ p {
   display: block;
   color: #2a977f;
   font-size: 14px;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .form-container label.email, .form-container label.password {
   top: 12px;
   opacity: 0;
   z-index: -1;
   position: absolute;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .form-container input {
   width: 95%;
@@ -102,10 +102,10 @@ p {
   top: -5px;
   z-index: 1;
   opacity: 1;
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .card-container {
