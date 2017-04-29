@@ -86,7 +86,8 @@ a.sign-up {
 .form-container:first-child {
   padding-bottom: 15px;
 }
-.form-container label {
+
+label {
   display: block;
   color: #2a977f;
   font-size: 14px;
@@ -95,7 +96,7 @@ a.sign-up {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.form-container label.email, .form-container label.password {
+label.email, label.password {
   top: 12px;
   opacity: 0;
   z-index: -1;
@@ -105,28 +106,32 @@ a.sign-up {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.form-container input {
-  width: 93%;
+
+input {
+  width: 97%;
   height: 30px;
   border: 1px solid #42cbad;
-  display: block;
-  margin: 0 auto;
   outline: none;
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 0;
   font-size: 16px;
+  margin: 0 auto;
+  display: block;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-.form-container input:focus {
+input:focus {
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   border: 1px solid #2a977f;
 }
-.form-container input:focus ~ label {
+input:focus ~ label {
   top: -5px;
   z-index: 1;
   opacity: 1;
