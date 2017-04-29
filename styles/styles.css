@@ -37,6 +37,30 @@ p {
   margin-bottom: 15px;
 }
 
+a {
+  color: #42cbad;
+  text-decoration: underline;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  color: #2a977f;
+  cursor: pointer;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+a.sign-up {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 25px;
+  margin: 0 auto;
+  display: block;
+}
+
 .container {
   max-width: 700px;
   min-width: 320px;
@@ -53,10 +77,14 @@ p {
   margin-top: 50px;
 }
 .form-container {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 0;
   margin: 0 auto;
   display: block;
   position: relative;
+}
+.form-container:first-child {
+  padding-bottom: 15px;
 }
 .form-container label {
   display: block;
@@ -78,7 +106,7 @@ p {
   transition: 0.5s;
 }
 .form-container input {
-  width: 95%;
+  width: 93%;
   height: 30px;
   border: 1px solid #42cbad;
   display: block;
@@ -136,13 +164,14 @@ p {
   -ms-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #2d466d;
-  margin-top: 20px;
+  margin-top: 25px;
   color: white;
   background-color: #2d466d;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  text-align: center;
 }
 .btn:hover, .btn:focus {
   background-color: #172337;
@@ -152,4 +181,12 @@ p {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+}
+.btn.btn-ghost {
+  background-color: white;
+  color: #2d466d;
+}
+.btn.btn-ghost:hover, .btn.btn-ghost:focus {
+  color: white;
+  background-color: #172337;
 }

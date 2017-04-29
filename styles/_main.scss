@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixins";
+
 
 html{
     min-height: 100%;
@@ -33,6 +35,26 @@ p{
     text-align: left;
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+a{
+    color: $green;
+    text-decoration: underline;
+    @include transition(0.5s);
+
+    &:hover{
+        color: darken($green, 15%);
+        cursor: pointer;
+        @include transition(0.5s);        
+    }
+
+    &.sign-up{
+        text-align: center;
+        font-size: 14px;
+        padding-top: 25px;
+        margin: 0 auto;
+        display: block;
+    }    
 }
 
 .container {
