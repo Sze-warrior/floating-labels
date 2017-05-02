@@ -130,6 +130,21 @@ input:focus {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   border: 1px solid #2a977f;
+  /* Firefox < 19 */
+  /* Firefox > 19 */
+  /* Internet Explorer 10 */
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 input:focus ~ label {
   top: -5px;
