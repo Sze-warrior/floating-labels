@@ -87,7 +87,7 @@ a.sign-up {
   padding-bottom: 15px;
 }
 
-label {
+.label {
   display: block;
   color: #2a977f;
   font-size: 14px;
@@ -96,7 +96,7 @@ label {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-label.email, label.password {
+.label.email, .label.password {
   top: 12px;
   opacity: 0;
   z-index: -1;
@@ -146,7 +146,7 @@ input:focus::-moz-placeholder {
 input:focus:-ms-input-placeholder {
   color: transparent;
 }
-input:focus ~ label {
+input:focus ~ .label {
   top: -5px;
   z-index: 1;
   opacity: 1;

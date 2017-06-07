@@ -18,7 +18,7 @@
     }
 }
 
-label{
+.label{
     display: block;
     color: darken($green, 15%);
     font-size: 14px;
@@ -71,7 +71,7 @@ input{
         }          
     }
 
-    &:focus~label{
+    &:focus~.label{
         top: -5px;
         z-index: 1;
         opacity: 1;
