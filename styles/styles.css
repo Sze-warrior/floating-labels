@@ -84,27 +84,26 @@ a.sign-up {
   position: relative;
 }
 .form-container:first-child {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 }
 
 .label {
   display: block;
   color: #2a977f;
   font-size: 14px;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .label.email, .label.password {
   top: 12px;
   opacity: 0;
-  z-index: -1;
   position: absolute;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 input {
@@ -125,10 +124,10 @@ input {
   border-radius: 4px;
 }
 input:focus {
-  -moz-transition: 0.6s;
-  -o-transition: 0.6s;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border: 1px solid #2a977f;
   /* Firefox < 19 */
   /* Firefox > 19 */
@@ -148,12 +147,11 @@ input:focus:-ms-input-placeholder {
 }
 input:focus ~ .label {
   top: -5px;
-  z-index: 1;
   opacity: 1;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card-container {
